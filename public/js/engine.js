@@ -29,9 +29,17 @@ function putStage() {
 
 /** "First wash the potato, then chop the carrot, then fry the mushroom": tap the steps in order. */
 function orderStage() {
-  const items = shuffle(ITEMS).slice(0, 3);
-  const verbs = shuffle(VERBS).slice(0, 3);
-  const steps = items.map((item, i) => ({ verb: verbs[i], item }));
+  // only steps that make sense in a kitchen (no chopping eggs)
+  const FITS = { wash: ['carrot', 'potato', 'tomato', 'mushroom'], chop: ['onion', 'carrot', 'potato', 'tomato', 'mushroom'], fry: ['egg', 'onion', 'mushroom', 'potato'], boil: ['egg', 'potato', 'carrot'] };
+  let steps;
+  do {
+    const used = new Set();
+    steps = shuffle(VERBS).slice(0, 3).map((verb) => {
+      const item = pick(FITS[verb].filter((x) => !used.has(x)));
+      used.add(item);
+      return { verb, item };
+    });
+  } while (steps.some((x) => !x.item));
   const choices = shuffle(steps.map((_, i) => i));
   // choices[k] = index into steps; the answer is the choice positions in step order
   return { kind: 'order', steps, choices: choices.map((i) => steps[i]), answer: steps.map((_, i) => choices.indexOf(i)) };
