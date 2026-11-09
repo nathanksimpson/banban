@@ -1,0 +1,14 @@
+{
+  "name": "banban",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Banban (반반): a two-player co-op game for practising each other's language",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

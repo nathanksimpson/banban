@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#FFE7A8"/>
+  <path d="M0 0h128v128H0zM256 0h128v128H256zM128 128h128v128H128zM384 128h128v128H384zM0 256h128v128H0zM256 256h128v128H256zM128 384h128v128H128zM384 384h128v128H384z" fill="#FFDC8A"/>
+  <ellipse cx="256" cy="420" rx="200" ry="18" fill="#2B1D14" opacity=".18"/>
+  <path d="M46 410 A105 105 0 0 1 256 410 Z" fill="#5B8CFF" stroke="#2B1D14" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M256 410 A105 105 0 0 1 466 410 Z" fill="#FF8A3D" stroke="#2B1D14" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="132" cy="352" r="13" fill="#2B1D14"/><circle cx="182" cy="352" r="13" fill="#2B1D14"/>
+  <circle cx="137" cy="347" r="4.5" fill="#fff"/><circle cx="187" cy="347" r="4.5" fill="#fff"/>
+  <path d="M140 374q17 15 34 0" fill="none" stroke="#2B1D14" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="330" cy="352" r="13" fill="#2B1D14"/><circle cx="380" cy="352" r="13" fill="#2B1D14"/>
+  <circle cx="335" cy="347" r="4.5" fill="#fff"/><circle cx="385" cy="347" r="4.5" fill="#fff"/>
+  <path d="M340 372q15 22 30 0z" fill="#7A2E12" stroke="#2B1D14" stroke-width="6" stroke-linejoin="round"/>
+  <ellipse cx="104" cy="384" rx="15" ry="9" fill="#FF9DB0"/><ellipse cx="210" cy="384" rx="15" ry="9" fill="#FF9DB0"/>
+  <ellipse cx="302" cy="384" rx="15" ry="9" fill="#FF6F7F"/><ellipse cx="408" cy="384" rx="15" ry="9" fill="#FF6F7F"/>
+  <text x="256" y="215" font-family="Noto Sans CJK KR, Noto Sans CJK TC, sans-serif" font-weight="900" font-size="172" fill="#FFD23F" stroke="#2B1D14" stroke-width="16" paint-order="stroke" text-anchor="middle" transform="rotate(-5 256 160)">반반</text>
+</svg>
